@@ -7,7 +7,18 @@
     ・アクセスURLは、本リポジトリとする。(https://github.com/shigyamamoto/LaravelSample01_Scraping)
     ・取得したHTMLより、外部リンクと思われるURLを取得し、laravel.logに出力する
     
+# 構築
+    cd LaravelSample01_Scraping
+    # ライブラリ
+    composer install
+    # .env
+    cp -i .env.example .env
+    php artisan key:generate
 
+# 実行
+    php artisan scraping:some
+    ※構築作業がないと実行できません。
+    
 # 環境
     下記は、開発者の動作環境です。
     MacOS 10.14.4
